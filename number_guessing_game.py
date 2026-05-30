@@ -9,5 +9,7 @@ guess = int(input("Guess a number between 1 to 10: "))
 # Check the guess
 if guess == secret_number:
     print("Congratulations! You guessed correctly")
-else:
-    print("Wrong guess.\nThe secret number was:", secret_number)
+elif guess < secret_number:
+    print("You guessed too low.\nSecret number was:", secret_number)
+elif guess > secret_number:
+    print("You guessed too high.\nThe secret number was:", secret_number)
